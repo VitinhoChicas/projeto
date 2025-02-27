@@ -1,0 +1,1434 @@
+2025-02-27T11:14:34.751-03:00  INFO 6244 --- [Projeto] [restartedMain] com.reserva.projeto.ProjetoApplication   : Starting ProjetoApplication using Java 17.0.12 with PID 6244 (C:\ProjetoSpring\projeto\target\classes started by Vitinho in C:\ProjetoSpring\projeto)
+2025-02-27T11:14:34.761-03:00  INFO 6244 --- [Projeto] [restartedMain] com.reserva.projeto.ProjetoApplication   : The following 1 profile is active: "dev"
+2025-02-27T11:14:34.825-03:00  INFO 6244 --- [Projeto] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27T11:14:34.825-03:00  INFO 6244 --- [Projeto] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27T11:14:35.394-03:00  INFO 6244 --- [Projeto] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-27T11:14:35.431-03:00  INFO 6244 --- [Projeto] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+2025-02-27T11:14:36.252-03:00  INFO 6244 --- [Projeto] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-27T11:14:36.265-03:00  INFO 6244 --- [Projeto] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-27T11:14:36.265-03:00  INFO 6244 --- [Projeto] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27T11:14:36.307-03:00  INFO 6244 --- [Projeto] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-27T11:14:36.308-03:00  INFO 6244 --- [Projeto] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1483 ms
+2025-02-27T11:14:36.472-03:00  INFO 6244 --- [Projeto] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-27T11:14:36.541-03:00  INFO 6244 --- [Projeto] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-27T11:14:36.587-03:00  INFO 6244 --- [Projeto] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-27T11:14:36.671-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@7139be67
+2025-02-27T11:14:36.672-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@7139be67
+2025-02-27T11:14:36.672-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@7139be67
+2025-02-27T11:14:36.672-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@75989d7c
+2025-02-27T11:14:36.672-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@75989d7c
+2025-02-27T11:14:36.672-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@3e19ea7b
+2025-02-27T11:14:36.672-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@3e19ea7b
+2025-02-27T11:14:36.672-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@1d28e7a1
+2025-02-27T11:14:36.672-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@1d28e7a1
+2025-02-27T11:14:36.673-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@215eb8e5
+2025-02-27T11:14:36.673-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@215eb8e5
+2025-02-27T11:14:36.673-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@215eb8e5
+2025-02-27T11:14:36.673-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@101cb2cf
+2025-02-27T11:14:36.674-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@101cb2cf
+2025-02-27T11:14:36.674-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@101cb2cf
+2025-02-27T11:14:36.674-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@6fa520e7
+2025-02-27T11:14:36.674-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@6fa520e7
+2025-02-27T11:14:36.674-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@1ada6d16
+2025-02-27T11:14:36.674-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@45e6fd28
+2025-02-27T11:14:36.674-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@45e6fd28
+2025-02-27T11:14:36.674-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@3f03bc3d
+2025-02-27T11:14:36.675-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@79e70122
+2025-02-27T11:14:36.675-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@301c61d5
+2025-02-27T11:14:36.675-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@301c61d5
+2025-02-27T11:14:36.675-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@301c61d5
+2025-02-27T11:14:36.675-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@42e1d543
+2025-02-27T11:14:36.675-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@42e1d543
+2025-02-27T11:14:36.675-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@42e1d543
+2025-02-27T11:14:36.675-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@60217b76
+2025-02-27T11:14:36.676-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@60217b76
+2025-02-27T11:14:36.676-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@60217b76
+2025-02-27T11:14:36.676-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@218e9841
+2025-02-27T11:14:36.676-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@218e9841
+2025-02-27T11:14:36.676-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@218e9841
+2025-02-27T11:14:36.676-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@724f576c
+2025-02-27T11:14:36.676-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@724f576c
+2025-02-27T11:14:36.676-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@724f576c
+2025-02-27T11:14:36.676-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@3ec8dfab
+2025-02-27T11:14:36.676-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@3ec8dfab
+2025-02-27T11:14:36.677-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@55d9f9cf
+2025-02-27T11:14:36.677-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@55d9f9cf
+2025-02-27T11:14:36.677-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@402fa5
+2025-02-27T11:14:36.677-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@402fa5
+2025-02-27T11:14:36.677-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@402fa5
+2025-02-27T11:14:36.677-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@8bcfcf6
+2025-02-27T11:14:36.677-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@70715fcd
+2025-02-27T11:14:36.677-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@70715fcd
+2025-02-27T11:14:36.677-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@6afcc78d
+2025-02-27T11:14:36.677-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@6b40e070
+2025-02-27T11:14:36.678-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@6b40e070
+2025-02-27T11:14:36.678-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@6b40e070
+2025-02-27T11:14:36.678-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@474faa2
+2025-02-27T11:14:36.678-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@7e0142d6
+2025-02-27T11:14:36.678-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@72cd3234
+2025-02-27T11:14:36.678-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@1ee20f7d
+2025-02-27T11:14:36.678-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@1ee20f7d
+2025-02-27T11:14:36.678-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@3de057e9
+2025-02-27T11:14:36.678-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@3de057e9
+2025-02-27T11:14:36.679-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@4903b571
+2025-02-27T11:14:36.679-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@52c462f7
+2025-02-27T11:14:36.679-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@5cd31635
+2025-02-27T11:14:36.679-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@63b34d59
+2025-02-27T11:14:36.679-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@37cfc463
+2025-02-27T11:14:36.679-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@466dcbb7
+2025-02-27T11:14:36.679-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@24b1ff1
+2025-02-27T11:14:36.679-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@24b1ff1
+2025-02-27T11:14:36.679-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@7beb4364
+2025-02-27T11:14:36.679-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@7beb4364
+2025-02-27T11:14:36.679-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@324e7ca6
+2025-02-27T11:14:36.680-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@324e7ca6
+2025-02-27T11:14:36.680-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@1a56392b
+2025-02-27T11:14:36.680-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@1a56392b
+2025-02-27T11:14:36.680-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@40b81907
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@40b81907
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@61698217
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@208369d0
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@bb7938a
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@bb7938a
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@b47d3da
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@2613919f
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@1de5b164
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@2af95a91
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@2af95a91
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@1f158517
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@25307003
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@156e9b50
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@156e9b50
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@75a376be
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@75a376be
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@462d7820
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@462d7820
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@462d7820
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@60bbb88e
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@60bbb88e
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@60bbb88e
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@1ee0bd2
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@6f969bd7
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@42d7027d
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@42d7027d
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@7f95ad61
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@7f95ad61
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@7f95ad61
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@e5499da
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@55c7e3e4
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@2f79c7cb
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@2f79c7cb
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@7dd599e0
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@7dd599e0
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@7dd599e0
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@576545c9
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@576545c9
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@3dd75402
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@3dd75402
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@5c718bec
+2025-02-27T11:14:36.681-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@5c718bec
+2025-02-27T11:14:36.685-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@dba131b
+2025-02-27T11:14:36.685-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@dba131b
+2025-02-27T11:14:36.685-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@708c5468
+2025-02-27T11:14:36.685-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@708c5468
+2025-02-27T11:14:36.685-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@777c693f
+2025-02-27T11:14:36.685-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float_vector -> org.hibernate.type.BasicTypeReference@2702b2d7
+2025-02-27T11:14:36.685-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double_vector -> org.hibernate.type.BasicTypeReference@7afd4fe7
+2025-02-27T11:14:36.685-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte_vector -> org.hibernate.type.BasicTypeReference@68c07bc4
+2025-02-27T11:14:36.685-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@7ce1d272
+2025-02-27T11:14:36.690-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@1dc73852
+2025-02-27T11:14:36.690-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@1dc73852
+2025-02-27T11:14:36.690-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@6bb2b40
+2025-02-27T11:14:36.690-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@792d1317
+2025-02-27T11:14:36.690-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@302a9642
+2025-02-27T11:14:36.690-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@66398399
+2025-02-27T11:14:36.690-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@39874535
+2025-02-27T11:14:36.690-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@28235cb9
+2025-02-27T11:14:36.690-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@4c5f4779
+2025-02-27T11:14:36.690-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@66d03020
+2025-02-27T11:14:36.690-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@657d7f22
+2025-02-27T11:14:36.936-03:00  INFO 6244 --- [Projeto] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-27T11:14:36.973-03:00  INFO 6244 --- [Projeto] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-27T11:14:37.185-03:00  INFO 6244 --- [Projeto] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@395fc6dc
+2025-02-27T11:14:37.185-03:00  INFO 6244 --- [Projeto] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-27T11:14:37.241-03:00  INFO 6244 --- [Projeto] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-27T11:14:37.253-03:00 DEBUG 6244 --- [Projeto] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@d944dee) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@5c75f463)
+2025-02-27T11:14:37.253-03:00 DEBUG 6244 --- [Projeto] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4036f785) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@29127739)
+2025-02-27T11:14:37.256-03:00 DEBUG 6244 --- [Projeto] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2004, BlobTypeDescriptor(BLOB_BINDING)) replaced previous registration(BlobTypeDescriptor(DEFAULT))
+2025-02-27T11:14:37.256-03:00 DEBUG 6244 --- [Projeto] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(CLOB_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-02-27T11:14:37.263-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration JAVA_OBJECT -> org.hibernate.type.JavaObjectType@6598f581
+2025-02-27T11:14:37.263-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@6598f581
+2025-02-27T11:14:37.263-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Type registration key [java.lang.Object] overrode previous entry : `org.hibernate.type.JavaObjectType@1dc73852`
+2025-02-27T11:14:37.265-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2025-02-27T11:14:37.265-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2025-02-27T11:14:37.265-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2025-02-27T11:14:37.265-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@2(java.time.OffsetDateTime,3003)
+2025-02-27T11:14:37.265-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2025-02-27T11:14:37.265-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2025-02-27T11:14:37.265-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@3(java.time.ZonedDateTime,3003)
+2025-02-27T11:14:37.265-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2025-02-27T11:14:37.265-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2025-02-27T11:14:37.275-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetTimeType -> basicType@4(java.time.OffsetTime,3007)
+2025-02-27T11:14:37.275-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2025-02-27T11:14:37.275-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2025-02-27T11:14:37.275-03:00 DEBUG 6244 --- [Projeto] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1ed1c508] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@f2afa4d]
+2025-02-27T11:14:38.025-03:00  INFO 6244 --- [Projeto] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-27T11:14:38.025-03:00 DEBUG 6244 --- [Projeto] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1ed1c508] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@3a49b4dd]
+2025-02-27T11:14:38.034-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.SQL                        : 
+    set client_min_messages = WARNING
+2025-02-27T11:14:38.035-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists reserva 
+       drop constraint if exists FK3dhkstrkce3y0su7a6kxphwbf
+2025-02-27T11:14:38.041-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists reserva cascade
+2025-02-27T11:14:38.045-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists usuario cascade
+2025-02-27T11:14:38.048-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_reserva
+2025-02-27T11:14:38.049-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_usuario
+2025-02-27T11:14:38.054-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_reserva start with 1 increment by 50
+2025-02-27T11:14:38.058-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_usuario start with 1 increment by 50
+2025-02-27T11:14:38.061-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.SQL                        : 
+    create table reserva (
+        data_reserva date not null,
+        idusuario integer,
+        status smallint check (status between 0 and 2),
+        id_reserva bigint not null,
+        descricao_sala varchar(255) not null,
+        nome_sala varchar(255) not null,
+        primary key (id_reserva)
+    )
+2025-02-27T11:14:38.065-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.SQL                        : 
+    create table usuario (
+        data_nascimento date not null,
+        id_usuario integer not null,
+        cpf_usuario varchar(255) not null,
+        email_usuario varchar(255) not null,
+        nome_usuario varchar(255) not null,
+        primary key (id_usuario)
+    )
+2025-02-27T11:14:38.065-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists reserva 
+       add constraint FK3dhkstrkce3y0su7a6kxphwbf 
+       foreign key (idusuario) 
+       references usuario
+2025-02-27T11:14:38.075-03:00 TRACE 6244 --- [Projeto] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@3a49b4dd] for TypeConfiguration
+2025-02-27T11:14:38.075-03:00  INFO 6244 --- [Projeto] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27T11:14:38.464-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_usuario')
+2025-02-27T11:14:38.515-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        usuario
+        (cpf_usuario, data_nascimento, email_usuario, nome_usuario, id_usuario) 
+    values
+        (?, ?, ?, ?, ?)
+2025-02-27T11:14:38.533-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_reserva')
+2025-02-27T11:14:38.537-03:00 DEBUG 6244 --- [Projeto] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        reserva
+        (data_reserva, descricao_sala, nome_sala, status, idusuario, id_reserva) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-02-27T11:14:38.605-03:00  WARN 6244 --- [Projeto] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27T11:14:38.928-03:00  INFO 6244 --- [Projeto] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/Reserva'
+2025-02-27T11:14:38.985-03:00  INFO 6244 --- [Projeto] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-27T11:14:39.025-03:00  INFO 6244 --- [Projeto] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-27T11:14:39.037-03:00  INFO 6244 --- [Projeto] [restartedMain] com.reserva.projeto.ProjetoApplication   : Started ProjetoApplication in 4.711 seconds (process running for 5.579)
+2025-02-27T11:15:22.957-03:00  INFO 6244 --- [Projeto] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-27T11:15:22.957-03:00  INFO 6244 --- [Projeto] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-27T11:15:22.958-03:00  INFO 6244 --- [Projeto] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-27T11:15:23.065-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0
+2025-02-27T11:15:42.767-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.cpf_usuario=?
+2025-02-27T11:15:52.523-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.cpf_usuario=?
+2025-02-27T11:15:52.524-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        nextval('seq_usuario')
+2025-02-27T11:15:52.526-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    insert 
+    into
+        usuario
+        (cpf_usuario, data_nascimento, email_usuario, nome_usuario, id_usuario) 
+    values
+        (?, ?, ?, ?, ?)
+2025-02-27T11:16:19.170-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.cpf_usuario=?
+2025-02-27T11:16:19.173-03:00 ERROR 6244 --- [Projeto] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.reserva.projeto.services.exceptions.DataIntegrityViolationException:  CPF ja cadastrado] with root cause
+
+com.reserva.projeto.services.exceptions.DataIntegrityViolationException:  CPF ja cadastrado
+	at com.reserva.projeto.services.UsuarioService.validaUsuario(UsuarioService.java:49) ~[classes/:na]
+	at com.reserva.projeto.services.UsuarioService.create(UsuarioService.java:40) ~[classes/:na]
+	at com.reserva.projeto.resources.UsuarioResource.create(UsuarioResource.java:43) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-02-27T11:16:30.066-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Illegal unquoted character ((CTRL-CHAR, code 13)): has to be escaped using backslash to be included in name]
+2025-02-27T11:16:36.752-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.reserva.projeto.domains.dtos.UsuarioDTO> com.reserva.projeto.resources.UsuarioResource.create(com.reserva.projeto.domains.dtos.UsuarioDTO): [Field error in object 'usuarioDTO' on field 'dataNascimento': rejected value [null]; codes [NotNull.usuarioDTO.dataNascimento,NotNull.dataNascimento,NotNull.java.time.LocalDate,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usuarioDTO.dataNascimento,dataNascimento]; arguments []; default message [dataNascimento]]; default message [O campo dataN não pode ser nulo]] ]
+2025-02-27T11:16:47.423-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.reserva.projeto.domains.dtos.UsuarioDTO> com.reserva.projeto.resources.UsuarioResource.create(com.reserva.projeto.domains.dtos.UsuarioDTO): [Field error in object 'usuarioDTO' on field 'dataNascimento': rejected value [null]; codes [NotNull.usuarioDTO.dataNascimento,NotNull.dataNascimento,NotNull.java.time.LocalDate,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usuarioDTO.dataNascimento,dataNascimento]; arguments []; default message [dataNascimento]]; default message [O campo dataN não pode ser nulo]] ]
+2025-02-27T11:16:54.286-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.cpf_usuario=?
+2025-02-27T11:16:54.288-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    insert 
+    into
+        usuario
+        (cpf_usuario, data_nascimento, email_usuario, nome_usuario, id_usuario) 
+    values
+        (?, ?, ?, ?, ?)
+2025-02-27T11:17:07.629-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:17:07.637-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.cpf_usuario=?
+2025-02-27T11:17:07.643-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    update
+        usuario 
+    set
+        cpf_usuario=?,
+        data_nascimento=?,
+        email_usuario=?,
+        nome_usuario=? 
+    where
+        id_usuario=?
+2025-02-27T11:17:37.191-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+2025-02-27T11:17:42.814-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0
+2025-02-27T11:18:35.952-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        r1_0.idusuario 
+    from
+        reserva r1_0
+2025-02-27T11:18:35.961-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:18:50.762-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        r1_0.idusuario 
+    from
+        reserva r1_0
+2025-02-27T11:18:50.763-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:18:57.681-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-02-27T11:19:04.356-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        r1_0.idusuario 
+    from
+        reserva r1_0 
+    where
+        r1_0.nome_sala=?
+2025-02-27T11:19:04.359-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:19:04.361-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        nextval('seq_reserva')
+2025-02-27T11:19:04.361-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    insert 
+    into
+        reserva
+        (data_reserva, descricao_sala, nome_sala, status, idusuario, id_reserva) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-02-27T11:19:13.352-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        r1_0.idusuario 
+    from
+        reserva r1_0 
+    where
+        r1_0.nome_sala=?
+2025-02-27T11:19:13.353-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:19:13.357-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: Nome da Sala já cadastrado]
+2025-02-27T11:19:21.833-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        r1_0.idusuario 
+    from
+        reserva r1_0 
+    where
+        r1_0.nome_sala=?
+2025-02-27T11:19:21.835-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:19:21.838-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    insert 
+    into
+        reserva
+        (data_reserva, descricao_sala, nome_sala, status, idusuario, id_reserva) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-02-27T11:19:37.768-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        r1_0.idusuario 
+    from
+        reserva r1_0 
+    where
+        r1_0.nome_sala=?
+2025-02-27T11:19:37.769-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:19:37.771-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: Nome da Sala já cadastrado]
+2025-02-27T11:19:43.666-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        r1_0.idusuario 
+    from
+        reserva r1_0 
+    where
+        r1_0.nome_sala=?
+2025-02-27T11:19:43.669-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:19:43.672-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    insert 
+    into
+        reserva
+        (data_reserva, descricao_sala, nome_sala, status, idusuario, id_reserva) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-02-27T11:19:51.710-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        r1_0.idusuario 
+    from
+        reserva r1_0 
+    where
+        r1_0.nome_sala=?
+2025-02-27T11:19:51.711-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:19:51.713-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    insert 
+    into
+        reserva
+        (data_reserva, descricao_sala, nome_sala, status, idusuario, id_reserva) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-02-27T11:19:56.391-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        r1_0.idusuario 
+    from
+        reserva r1_0
+2025-02-27T11:19:56.392-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:19:56.393-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:20:27.139-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        reserva r1_0 
+    left join
+        usuario u1_0 
+            on u1_0.id_usuario=r1_0.idusuario 
+    where
+        r1_0.id_reserva=?
+2025-02-27T11:20:27.142-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        r1_0.idusuario 
+    from
+        reserva r1_0 
+    where
+        r1_0.nome_sala=?
+2025-02-27T11:20:27.144-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:20:27.146-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    update
+        reserva 
+    set
+        data_reserva=?,
+        descricao_sala=?,
+        nome_sala=?,
+        status=?,
+        idusuario=? 
+    where
+        id_reserva=?
+2025-02-27T11:20:31.879-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        reserva r1_0 
+    left join
+        usuario u1_0 
+            on u1_0.id_usuario=r1_0.idusuario 
+    where
+        r1_0.id_reserva=?
+2025-02-27T11:21:10.658-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        r1_0.idusuario 
+    from
+        reserva r1_0
+2025-02-27T11:21:10.659-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:21:37.192-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        reserva r1_0 
+    left join
+        usuario u1_0 
+            on u1_0.id_usuario=r1_0.idusuario 
+    where
+        r1_0.id_reserva=?
+2025-02-27T11:21:37.199-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    delete 
+    from
+        reserva 
+    where
+        id_reserva=?
+2025-02-27T11:21:50.678-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:21:56.009-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:21:56.012-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    delete 
+    from
+        usuario 
+    where
+        id_usuario=?
+2025-02-27T11:22:01.389-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:22:01.390-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    delete 
+    from
+        usuario 
+    where
+        id_usuario=?
+2025-02-27T11:22:06.516-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        reserva r1_0 
+    left join
+        usuario u1_0 
+            on u1_0.id_usuario=r1_0.idusuario 
+    where
+        r1_0.id_reserva=?
+2025-02-27T11:22:06.518-03:00 ERROR 6244 --- [Projeto] [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.reserva.projeto.services.exceptions.ObjectNotFoundException: Reserva não encontrada Id:5] with root cause
+
+com.reserva.projeto.services.exceptions.ObjectNotFoundException: Reserva não encontrada Id:5
+	at com.reserva.projeto.services.ReservaService.lambda$findbyId$1(ReservaService.java:34) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.reserva.projeto.services.ReservaService.findbyId(ReservaService.java:34) ~[classes/:na]
+	at com.reserva.projeto.resources.ReservaResource.findById(ReservaResource.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-02-27T11:22:09.274-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        r1_0.idusuario 
+    from
+        reserva r1_0
+2025-02-27T11:22:09.275-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:22:27.358-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        reserva r1_0 
+    left join
+        usuario u1_0 
+            on u1_0.id_usuario=r1_0.idusuario 
+    where
+        r1_0.id_reserva=?
+2025-02-27T11:22:27.363-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        r1_0.idusuario 
+    from
+        reserva r1_0 
+    where
+        r1_0.nome_sala=?
+2025-02-27T11:22:27.366-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:22:27.369-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: Usuario - 2não esta cadastrado]
+2025-02-27T11:22:37.919-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.cpf_usuario=?
+2025-02-27T11:22:37.921-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    insert 
+    into
+        usuario
+        (cpf_usuario, data_nascimento, email_usuario, nome_usuario, id_usuario) 
+    values
+        (?, ?, ?, ?, ?)
+2025-02-27T11:22:40.816-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        reserva r1_0 
+    left join
+        usuario u1_0 
+            on u1_0.id_usuario=r1_0.idusuario 
+    where
+        r1_0.id_reserva=?
+2025-02-27T11:22:40.817-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        r1_0.idusuario 
+    from
+        reserva r1_0 
+    where
+        r1_0.nome_sala=?
+2025-02-27T11:22:40.818-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:22:40.819-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: Usuario - 2não esta cadastrado]
+2025-02-27T11:23:19.199-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0
+2025-02-27T11:24:06.084-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0
+2025-02-27T11:24:21.162-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        reserva r1_0 
+    left join
+        usuario u1_0 
+            on u1_0.id_usuario=r1_0.idusuario 
+    where
+        r1_0.id_reserva=?
+2025-02-27T11:24:21.164-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        r1_0.idusuario 
+    from
+        reserva r1_0 
+    where
+        r1_0.nome_sala=?
+2025-02-27T11:24:21.165-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:24:21.166-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    update
+        reserva 
+    set
+        data_reserva=?,
+        descricao_sala=?,
+        nome_sala=?,
+        status=?,
+        idusuario=? 
+    where
+        id_reserva=?
+2025-02-27T11:24:32.249-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:24:32.250-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    delete 
+    from
+        usuario 
+    where
+        id_usuario=?
+2025-02-27T11:24:32.263-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23503
+2025-02-27T11:24:32.264-03:00 ERROR 6244 --- [Projeto] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: update or delete on table "usuario" violates foreign key constraint "fk3dhkstrkce3y0su7a6kxphwbf" on table "reserva"
+  Detalhe: Key (id_usuario)=(4) is still referenced from table "reserva".
+2025-02-27T11:24:32.270-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement [ERROR: update or delete on table "usuario" violates foreign key constraint "fk3dhkstrkce3y0su7a6kxphwbf" on table "reserva"<EOL>  Detalhe: Key (id_usuario)=(4) is still referenced from table "reserva".] [delete from usuario where id_usuario=?]; SQL [delete from usuario where id_usuario=?]; constraint [fk3dhkstrkce3y0su7a6kxphwbf]]
+2025-02-27T11:24:52.799-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        reserva r1_0 
+    left join
+        usuario u1_0 
+            on u1_0.id_usuario=r1_0.idusuario 
+    where
+        r1_0.id_reserva=?
+2025-02-27T11:24:52.800-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    delete 
+    from
+        reserva 
+    where
+        id_reserva=?
+2025-02-27T11:24:55.786-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:24:55.788-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    delete 
+    from
+        usuario 
+    where
+        id_usuario=?
+2025-02-27T11:24:55.789-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23503
+2025-02-27T11:24:55.789-03:00 ERROR 6244 --- [Projeto] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: update or delete on table "usuario" violates foreign key constraint "fk3dhkstrkce3y0su7a6kxphwbf" on table "reserva"
+  Detalhe: Key (id_usuario)=(4) is still referenced from table "reserva".
+2025-02-27T11:24:55.791-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement [ERROR: update or delete on table "usuario" violates foreign key constraint "fk3dhkstrkce3y0su7a6kxphwbf" on table "reserva"<EOL>  Detalhe: Key (id_usuario)=(4) is still referenced from table "reserva".] [delete from usuario where id_usuario=?]; SQL [delete from usuario where id_usuario=?]; constraint [fk3dhkstrkce3y0su7a6kxphwbf]]
+2025-02-27T11:25:12.343-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:25:12.344-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    delete 
+    from
+        usuario 
+    where
+        id_usuario=?
+2025-02-27T11:25:12.345-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23503
+2025-02-27T11:25:12.345-03:00 ERROR 6244 --- [Projeto] [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: update or delete on table "usuario" violates foreign key constraint "fk3dhkstrkce3y0su7a6kxphwbf" on table "reserva"
+  Detalhe: Key (id_usuario)=(4) is still referenced from table "reserva".
+2025-02-27T11:25:12.346-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement [ERROR: update or delete on table "usuario" violates foreign key constraint "fk3dhkstrkce3y0su7a6kxphwbf" on table "reserva"<EOL>  Detalhe: Key (id_usuario)=(4) is still referenced from table "reserva".] [delete from usuario where id_usuario=?]; SQL [delete from usuario where id_usuario=?]; constraint [fk3dhkstrkce3y0su7a6kxphwbf]]
+2025-02-27T11:25:16.378-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:25:22.544-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:25:22.546-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    delete 
+    from
+        usuario 
+    where
+        id_usuario=?
+2025-02-27T11:25:22.547-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23503
+2025-02-27T11:25:22.547-03:00 ERROR 6244 --- [Projeto] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: update or delete on table "usuario" violates foreign key constraint "fk3dhkstrkce3y0su7a6kxphwbf" on table "reserva"
+  Detalhe: Key (id_usuario)=(4) is still referenced from table "reserva".
+2025-02-27T11:25:22.548-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement [ERROR: update or delete on table "usuario" violates foreign key constraint "fk3dhkstrkce3y0su7a6kxphwbf" on table "reserva"<EOL>  Detalhe: Key (id_usuario)=(4) is still referenced from table "reserva".] [delete from usuario where id_usuario=?]; SQL [delete from usuario where id_usuario=?]; constraint [fk3dhkstrkce3y0su7a6kxphwbf]]
+2025-02-27T11:25:28.028-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0
+2025-02-27T11:26:02.331-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:26:02.332-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    delete 
+    from
+        usuario 
+    where
+        id_usuario=?
+2025-02-27T11:26:02.333-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23503
+2025-02-27T11:26:02.334-03:00 ERROR 6244 --- [Projeto] [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: update or delete on table "usuario" violates foreign key constraint "fk3dhkstrkce3y0su7a6kxphwbf" on table "reserva"
+  Detalhe: Key (id_usuario)=(4) is still referenced from table "reserva".
+2025-02-27T11:26:02.336-03:00  WARN 6244 --- [Projeto] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement [ERROR: update or delete on table "usuario" violates foreign key constraint "fk3dhkstrkce3y0su7a6kxphwbf" on table "reserva"<EOL>  Detalhe: Key (id_usuario)=(4) is still referenced from table "reserva".] [delete from usuario where id_usuario=?]; SQL [delete from usuario where id_usuario=?]; constraint [fk3dhkstrkce3y0su7a6kxphwbf]]
+2025-02-27T11:26:12.274-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        reserva r1_0 
+    left join
+        usuario u1_0 
+            on u1_0.id_usuario=r1_0.idusuario 
+    where
+        r1_0.id_reserva=?
+2025-02-27T11:26:12.275-03:00 ERROR 6244 --- [Projeto] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.reserva.projeto.services.exceptions.ObjectNotFoundException: Reserva não encontrada Id:4] with root cause
+
+com.reserva.projeto.services.exceptions.ObjectNotFoundException: Reserva não encontrada Id:4
+	at com.reserva.projeto.services.ReservaService.lambda$findbyId$1(ReservaService.java:34) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.reserva.projeto.services.ReservaService.findbyId(ReservaService.java:34) ~[classes/:na]
+	at com.reserva.projeto.resources.ReservaResource.findById(ReservaResource.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-02-27T11:26:18.665-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        r1_0.idusuario 
+    from
+        reserva r1_0
+2025-02-27T11:26:18.666-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:26:18.667-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:26:31.345-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        r1_0.id_reserva,
+        r1_0.data_reserva,
+        r1_0.descricao_sala,
+        r1_0.nome_sala,
+        r1_0.status,
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        reserva r1_0 
+    left join
+        usuario u1_0 
+            on u1_0.id_usuario=r1_0.idusuario 
+    where
+        r1_0.id_reserva=?
+2025-02-27T11:26:31.347-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    delete 
+    from
+        reserva 
+    where
+        id_reserva=?
+2025-02-27T11:26:34.075-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.id_usuario=?
+2025-02-27T11:26:34.077-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    delete 
+    from
+        usuario 
+    where
+        id_usuario=?
+2025-02-27T11:28:55.719-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.cpf_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.cpf_usuario=?
+2025-02-27T11:28:55.722-03:00 DEBUG 6244 --- [Projeto] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    insert 
+    into
+        usuario
+        (cpf_usuario, data_nascimento, email_usuario, nome_usuario, id_usuario) 
+    values
+        (?, ?, ?, ?, ?)
+2025-02-27T11:29:56.753-03:00  INFO 6244 --- [Projeto] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-27T11:29:56.860-03:00  INFO 6244 --- [Projeto] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-27T11:29:56.863-03:00  INFO 6244 --- [Projeto] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-27T11:29:56.863-03:00 TRACE 6244 --- [Projeto] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@3a49b4dd] for TypeConfiguration
+2025-02-27T11:29:56.863-03:00 DEBUG 6244 --- [Projeto] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@4ce2168b] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@3a49b4dd]
+2025-02-27T11:29:56.866-03:00  INFO 6244 --- [Projeto] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-27T11:29:56.867-03:00  INFO 6244 --- [Projeto] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
